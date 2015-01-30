@@ -40,7 +40,7 @@ def deploy_message(app_name, app_url, deploy_url, deploytarget_name, git_commit,
 end
 
 def icon_url(status)
-  "https://github.com/wantedly/step-pretty-slack-notify/raw/master/icons/#{status}.jpg"
+  "https://github.com/kentashoji/step-pretty-slack-notify/raw/master/icons/#{status}.jpg"
 end
 
 def username_with_status(username, status)
