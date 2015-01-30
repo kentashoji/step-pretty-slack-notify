@@ -36,7 +36,7 @@ def build_message(app_name, app_url, build_url, git_commit, git_branch, started_
 end
 
 def deploy_message(app_name, app_url, deploy_url, deploytarget_name, git_commit, git_branch, started_by, status)
-  "<!channel> @group: [[#{app_name}](#{app_url})] [deploy(#{git_commit[0,8]})](#{deploy_url}) of #{git_branch} to #{deploytarget_name} by #{started_by} #{status} @group: "
+  "<!channel> <!group> <!everyone> [[#{app_name}](#{app_url})] [deploy(#{git_commit[0,8]})](#{deploy_url}) of #{git_branch} to #{deploytarget_name} by #{started_by} #{status}"
 end
 
 def icon_url(status)
